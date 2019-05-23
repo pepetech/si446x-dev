@@ -1156,6 +1156,26 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFD0D0D0"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="19,1,d824c41c2424381c"/>
+<approved hash="19,1,202c3c14342c2814"/>
+<approved hash="19,1,d4f4d40c343434cc"/>
+<approved hash="19,1,2cfc2c04243c24c4"/>
+<approved hash="6,1,db984299be9a279b"/>
+<approved hash="6,1,7191f2900e928d93"/>
+<approved hash="6,1,831035128d92b872"/>
+<approved hash="6,1,e69763969f971a96"/>
+<approved hash="6,1,21e32467246721e3"/>
+<approved hash="6,1,206824ea24ea2068"/>
+<approved hash="6,1,017e2681da8cfd73"/>
+<approved hash="6,1,579ad09b2c95ab94"/>
+<approved hash="6,1,5926f6fe015fad79"/>
+<approved hash="6,1,d1ad0d16fe952377"/>
+<approved hash="6,1,6a9add9b21959694"/>
+<approved hash="6,1,87920e93f2ec7bed"/>
+<approved hash="6,1,7491ff9003928893"/>
+<approved hash="6,1,e5976c9690971996"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
