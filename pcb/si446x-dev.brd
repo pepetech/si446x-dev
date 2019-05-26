@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -764,7 +764,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="15.432" y="12.5456" size="0.762" layer="27" font="vector" ratio="10" rot="SR90"/>
 </element>
 <element name="RFCON1" library="RF Connector" package="U.FL" value="RFCON-U.FL" x="20.2" y="23.5" smashed="yes" rot="R180"/>
-<element name="U1" library="Silicon Labs" package="QFN20" value="SI446X" x="12.1" y="9" smashed="yes" rot="R270">
+<element name="U1" library="Silicon Labs" package="QFN20" value="SI4463" x="12.1" y="9" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.1" y="5.419" size="0.762" layer="25" font="vector" ratio="10"/>
 </element>
 <element name="X1" library="Crystal" package="4-SMD-3225" value="30 MHz" x="17.4" y="5.7" smashed="yes" rot="R270">

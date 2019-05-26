@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -301,7 +301,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="SI446X" prefix="U">
+<deviceset name="SI446*" prefix="U">
 <gates>
 <gate name="G$1" symbol="SI446X" x="0" y="0"/>
 </gates>
@@ -330,7 +330,7 @@
 <connect gate="G$1" pin="XOUT" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="3"/>
 </technologies>
 </device>
 </devices>
@@ -446,6 +446,17 @@
 <wire x1="-1.9407" y1="-1.0398" x2="-1.9407" y2="1.0398" width="0.1905" layer="21"/>
 <wire x1="-1.9407" y1="1.0398" x2="-0.381" y2="1.0398" width="0.1905" layer="21"/>
 </package>
+<package name="IND2520">
+<smd name="1" x="0" y="-1.05" dx="2.2" dy="1.2" layer="1"/>
+<text x="-0.98" y="1.95" size="0.4064" layer="25">&gt;NAME</text>
+<wire x1="-1" y1="1.25" x2="1" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1" y1="1.25" x2="1" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.25" x2="-1" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.25" x2="-1" y2="1.25" width="0.127" layer="51"/>
+<smd name="2" x="0" y="1.05" dx="2.2" dy="1.2" layer="1"/>
+<wire x1="-1" y1="0.3" x2="-1" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="1" y1="0.3" x2="1" y2="-0.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="IND">
@@ -499,6 +510,15 @@
 </technologies>
 </device>
 <device name="-0805" package="IND0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.5X2X1.2MM" package="IND2520">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1070,6 +1090,90 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="5.969" y1="-2.921" x2="6.731" y2="-1.905" layer="21"/>
 <rectangle x1="8.509" y1="-2.921" x2="9.271" y2="-1.905" layer="21"/>
 </package>
+<package name="1X08/CH">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<text x="-8.255" y="-1.27" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="14.605" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.127" layer="51"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="0" y1="0.635" x2="-0.635" y2="1.27" width="0.127" layer="51"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.127" layer="51"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.127" layer="51"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.127" layer="51"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.127" layer="51"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.127" layer="51"/>
+<wire x1="4.445" y1="-1.27" x2="5.08" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.127" layer="51"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.127" layer="51"/>
+<wire x1="6.985" y1="-1.27" x2="7.62" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0.635" x2="6.985" y2="1.27" width="0.127" layer="51"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.127" layer="51"/>
+<wire x1="5.08" y1="0.635" x2="4.445" y2="1.27" width="0.127" layer="51"/>
+<rectangle x1="-6.6421" y1="-0.2921" x2="-6.0579" y2="0.2921" layer="51"/>
+<rectangle x1="-4.1021" y1="-0.2921" x2="-3.5179" y2="0.2921" layer="51"/>
+<rectangle x1="-1.5621" y1="-0.2921" x2="-0.9779" y2="0.2921" layer="51" rot="R180"/>
+<rectangle x1="0.9779" y1="-0.2921" x2="1.5621" y2="0.2921" layer="51"/>
+<rectangle x1="3.5179" y1="-0.2921" x2="4.1021" y2="0.2921" layer="51" rot="R180"/>
+<rectangle x1="6.0579" y1="-0.2921" x2="6.6421" y2="0.2921" layer="51" rot="R180"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<pad name="5" x="3.81" y="-0.0254" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<hole x="-6.35" y="1.6" drill="1.016"/>
+<hole x="-3.81" y="1.6" drill="1.016"/>
+<hole x="-1.27" y="1.6" drill="1.016"/>
+<hole x="1.27" y="1.6" drill="1.016"/>
+<hole x="3.81" y="1.6" drill="1.016"/>
+<hole x="6.35" y="1.6" drill="1.016"/>
+<wire x1="-7.65" y1="1.6" x2="12.73" y2="1.6" width="0.02" layer="51"/>
+<text x="-6.994" y="4.552" size="0.3048" layer="51" rot="R270">PCB Edge</text>
+<wire x1="-7.227" y1="2.511" x2="-7.527" y2="1.811" width="0.08" layer="51"/>
+<wire x1="-7.527" y1="1.811" x2="-7.327" y2="1.911" width="0.08" layer="51"/>
+<wire x1="-7.527" y1="1.811" x2="-7.627" y2="2.011" width="0.08" layer="51"/>
+<wire x1="9.525" y1="-1.27" x2="8.255" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="8.255" y1="-1.27" x2="7.62" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0.635" x2="8.255" y2="1.27" width="0.127" layer="51"/>
+<wire x1="9.525" y1="-1.27" x2="10.16" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="10.16" y1="0.635" x2="9.525" y2="1.27" width="0.127" layer="51"/>
+<wire x1="8.255" y1="1.27" x2="9.525" y2="1.27" width="0.127" layer="51"/>
+<rectangle x1="8.5979" y1="-0.2921" x2="9.1821" y2="0.2921" layer="51" rot="R180"/>
+<pad name="7" x="8.89" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<hole x="8.89" y="1.6" drill="1.016"/>
+<wire x1="12.065" y1="-1.27" x2="10.795" y2="-1.27" width="0.127" layer="51"/>
+<wire x1="10.795" y1="-1.27" x2="10.16" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="10.16" y1="0.635" x2="10.795" y2="1.27" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-0.635" x2="12.7" y2="0.635" width="0.127" layer="51"/>
+<wire x1="12.065" y1="-1.27" x2="12.7" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="12.7" y1="0.635" x2="12.065" y2="1.27" width="0.127" layer="51"/>
+<wire x1="10.795" y1="1.27" x2="12.065" y2="1.27" width="0.127" layer="51"/>
+<rectangle x1="11.1379" y1="-0.2921" x2="11.7221" y2="0.2921" layer="51" rot="R180"/>
+<pad name="8" x="11.43" y="0" drill="1.016" diameter="1.6256" shape="offset" rot="R90"/>
+<hole x="11.43" y="1.6" drill="1.016"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="1X08" urn="urn:adsk.eagle:package:22409/2" type="model">
@@ -1144,6 +1248,21 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:22413/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/CH" package="1X08/CH">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -5222,7 +5341,7 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <attribute name="CREVISION" value=""/>
 <attribute name="DESIGNER" value=""/>
 </part>
-<part name="U1" library="Silicon Labs" deviceset="SI446X" device=""/>
+<part name="U1" library="Silicon Labs" deviceset="SI446*" device="" technology="3"/>
 <part name="L1" library="Inductor" deviceset="INDUCTOR" device="-0603" value="120nH"/>
 <part name="L3" library="Inductor" deviceset="INDUCTOR" device="-0603" value="3.3nH"/>
 <part name="L6" library="Inductor" deviceset="INDUCTOR" device="-0603" value="12nH"/>
